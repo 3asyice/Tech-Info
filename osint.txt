@@ -1,0 +1,41 @@
+# Relatório OSINT - [Nome da Pessoa]
+
+## 1. Identificação Básica
+- Nome completo:
+- Outros nomes:
+- Data de nascimento:
+- Foto:
+
+## 2. Presença Digital
+- Redes sociais:
+- Usernames:
+- E-mails públicos:
+- Sites associados:
+
+## 3. Localização
+- Cidades resididas:
+- Check-ins relevantes:
+- Imagens com geolocalização:
+
+## 4. Vínculos e Relacionamentos
+- Familiares públicos:
+- Contatos frequentes:
+
+## 5. Atividade Online
+- Comportamento:
+- Postagens marcantes:
+- Padrões de linguagem:
+
+## 6. Histórico Profissional
+- Cargos:
+- Formação:
+- Empresas:
+
+## 7. Reputação e Risco
+- Notícias associadas:
+- Processos públicos:
+- Reclamações:
+
+## 8. Conclusão Analítica
+- Riscos:
+- Recomendações:
