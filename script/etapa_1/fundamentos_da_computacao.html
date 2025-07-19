@@ -15,18 +15,18 @@
   <meta name="keywords" content="Diário de um Soldado, Diário Pessoal, Revelações, Crítica, Aperfeiçoamento Militar, Soldado, Ruínas"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="robots" content="index, follow"/>
-  <link rel="icon" href="../../assets/img/icon.jpg">
+  <link rel="icon" href="../../../assets/img/icon.jpg">
   <link rel="stylesheet" href="../../style.css" type="text/css" media="all" />
 </head>
 <style type="text/css" media="all">
 @font-face {
   font-family: Regular;
-  src: url('../assets/font/regular.ttf') format('woff2');
+  src: url('../../assets/font/regular.ttf') format('woff2');
   font-display: swap;
 }
 @font-face {
   font-family: Input-Sans;
-  src: url('../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
+  src: url('../../assets/font/InputSansNarrow-Regular.ttf') format('woff2');
   font-display: swap;
 }
 
@@ -173,8 +173,7 @@ text-decoration: none;
 </section>
 <section class="a">
 <div class="sentence">
-<h2>Lista de Alunos</h2>
-<p>A lista abaixo apresenta os alunos do Técnico em Informática da Escola Técnica Estadual 25 de Julho.</p>
+<h2>Fundamentos da Computação</h2>
 <style>
   div.table{
     margin:0 60px 0 20px;
@@ -187,30 +186,947 @@ text-decoration: none;
     text-decoration: none;
     font-size: 12px;
   }
+section.a div.sentence h3{
+  margin-left: 10px;
+}
 </style>
+<p>Componente Curricular: Fundamentos da Computação</p>
+
+<p>Ementa:</p>
 <div class="table">
-  <p>Tabela de Alunos de Informática: Turma 124</p>
 <ul>
-  <li><a href="script/turma/124/Alexis_Barnaski.html">Alexis Dartagnan Barnaski</a></li>
-<li><a href="script/turma/124/Ana_Julia.html">Ana Júlia de Lima Pessoa</a></li>
-<li><a href="script/turma/124/Andre_Oling.html">André Sergio Rader Oling</a></li>
-<li><a href="script/turma/124/Davi_Pereira.html">Davi Pereira Leal</a></li>
-<li><a href="script/turma/124/Eduardo_da_Silva_de_Lima.html">Eduardo da Silva de Lima</a></li>
-<li><a href="script/turma/124/Fabio_Adami.html">Fabio Adami Gottschefsky</a></li>
-<li><a href="script/turma/124/Felipe_Eduardo.html">Felipe Eduardo Rodrigues Munhoz</a></li>
-<li><a href="script/turma/124/Gilmar_Rodrigues.html">Gilmar Rodrigues Silveira</a></li>
-<li><a href="script/turma/124/Guilherme_Carvalho.html">Guilherme de Abreu Carvalho</a></li>
+<li><a href="#AF1">Evolução dos computadores/gerações e respectivas arquiteturas;</a></li>
+<li><a href="#AFK">Relação de dados, informações, conhecimento, ciência e tecnologia;</a></li>
+<li><a href="">Unidades métricas computacionais;</a></li>
+<li><a href="">Sistemas de numeração/conversão e sua aplicabilidade;</a></li>
+<li><a href="">Componentes de hardware para armazenamento, comunicação e interface com o sistema;</a></li>
+<li><a href="">Tipos de linguagens e sua evolução;</a></li>
+<li><a href="">Navegadores, compatibilidade com sistemas operacionais e eficiência na busca de informações.</a></li>
+</ul>
+</div>
+<h2>Unidade 1: Sistema Computacional</h2>
+
+<h3>O que é um sistema computacional?</h3>
+<p>
+Um sistema computacional é um conjunto integrado de componentes que trabalham em conjunto para processar dados e realizar tarefas específicas. Pense nele como um organismo complexo onde cada parte tem uma função crucial e interage com as outras. Os três elementos fundamentais que compõem um sistema computacional são:</p>
+<div class="table">
+<ul>
+<li>
+<p>
+Hardware: A parte física e tangível do computador. São os componentes eletrônicos e mecânicos que você pode tocar.</p></li>
+
+
+<li><p>
+Software: Os programas, instruções e dados que controlam o hardware e permitem que o usuário interaja com o sistema. É a parte lógica e não física.
+</p></li>
+<li><p>
+Usuário: A pessoa que interage com o sistema computacional, fornecendo entradas (dados e comandos) e recebendo saídas (resultados do processamento).
+</p></li>
+</ul>
+</div>
+<br>
+<br>
+<center><img width="95%" src="../../assets/img/other/computer_design.jpg" alt="computer design"></center>
+
+<h3 id="AFK">Relação entre Dados, Informações, Conhecimento, Ciência e Tecnologia</h3>
+<p>
+Para entender como um sistema computacional funciona e sua importância, é crucial distinguir alguns conceitos interligados:</p>
+<div class="table">
+<ul>
+<li><p>
+Dados: São elementos brutos e isolados, sem um contexto específico. Podem ser números, letras, símbolos, imagens, sons, etc. Sozinhos, geralmente não têm muito significado.
+</p></li>
+<li><p>
+Informações: São dados que foram organizados, processados e apresentados de forma que façam sentido e tenham utilidade para um determinado propósito. A informação responde a perguntas como "quem?", "o quê?", "onde?", "quando?" e "por quê?".
+<br>
+Exemplo: "A temperatura em Porto Alegre hoje é de 32°C." (O dado "32" agora tem contexto de local e tempo, tornando-se informação).
+</p></li>
+<li><p>
+Conhecimento: É o resultado da interpretação, compreensão e análise da informação. Envolve a capacidade de aplicar a informação para resolver problemas, tomar decisões e gerar novas ideias. O conhecimento é pessoal e está ligado à experiência e ao aprendizado.
+<br><br>
+Exemplo: Um meteorologista, ao analisar a informação de temperatura de 32°C juntamente com dados de umidade, pressão atmosférica e padrões climáticos históricos, adquire o conhecimento para prever a probabilidade de chuva.
+</p></li>
+<li><p>
+Ciência: É um sistema organizado de conhecimento adquirido através do estudo, observação, experimentação e raciocínio lógico. Busca entender os princípios fundamentais que governam o universo e gerar teorias e modelos explicativos.
+br
+Exemplo: A termodinâmica é um ramo da física (ciência) que estuda o calor e a temperatura, fornecendo as bases teóricas para entender as medições de temperatura.
+<br><br>
+Exemplo: O número "32".
+</p></li>
+<li><p>
+Tecnologia: É a aplicação prática do conhecimento científico para desenvolver ferramentas, processos, sistemas e soluções que atendam às necessidades humanas. A tecnologia utiliza os princípios científicos para criar produtos e serviços.
+<br><br>
+Exemplo: Um sistema de previsão do tempo (tecnologia) utiliza modelos atmosféricos baseados em princípios da termodinâmica e outros campos da ciência para processar dados e gerar informações úteis.
+<br><br>
+Exemplo prático:
+Um sensor coleta dados de temperatura (ex: "28.5"). Um sistema computacional processa esses dados, adicionando a unidade de medida e o local, transformando-os em informação: "A temperatura na sala é de 28.5°C". Um técnico de climatização utiliza essa informação, juntamente com seu conhecimento sobre sistemas de ar condicionado e as necessidades dos usuários, para ajustar a temperatura ideal. O sensor, o sistema de processamento e o sistema de ar condicionado são exemplos de tecnologia, desenvolvidos com base em princípios da ciência da termodinâmica e da engenharia.
+
+</p></li>
+</ul>
+</div>
+<p>Exercício:
+Dê um exemplo de dado, informação e conhecimento aplicado em uma situação do cotidiano (diferente do exemplo da temperatura).</p>
+
+<h2 id="AF1">
+Unidade 2: Evolução dos Computadores e Arquiteturas
+</h2>
+<h3>
+Gerações de Computadores
+</h3>
+<p>A história dos computadores é marcada por avanços tecnológicos significativos, divididos em gerações, cada uma definida pelo componente eletrônico principal utilizado:</p>
+<h3>1ª Geração (1940-1956): Válvulas Eletrônicas</h3>
+<p>
+Componentes: Utilizavam válvulas termiônicas (tubos de vidro a vácuo) para processamento e armazenamento.</p>
+<p>
+Características: Enormes em tamanho, consumiam muita energia, geravam calor excessivo, lentos, caros e com baixa confiabilidade. A programação era feita em linguagem de máquina.</p>
+<p>
+Exemplo: ENIAC (Electronic Numerical Integrator and Computer) - um dos primeiros computadores eletrônicos de propósito geral.
+</p>
+<center>
+<img width="95%" src="../../assets/img/other/eniac.jpg" alt="ENIAC">
+</center>
+<h3>2ª Geração (1956-1963): Transistores</h3>
+<p>
+Componentes: Substituíram as válvulas por transistores, dispositivos semicondutores menores, mais rápidos, mais confiáveis e com menor consumo de energia.
+</p>
+<p>
+Características: Menores, mais rápidos, menor consumo de energia, mais confiáveis e mais baratos que os da primeira geração. Desenvolvimento das primeiras linguagens de programação de alto nível (como FORTRAN e COBOL).
+</p>
+<p>
+Exemplo: IBM 1401 - um computador popular para aplicações empresariais.
+</p>
+
+
+<h3>
+3ª Geração (1964-1971): Circuitos Integrados (Chips)
+</h3>
+<p>
+Componentes: Múltiplos transistores e outros componentes eletrônicos foram integrados em uma única pastilha de silício, o circuito integrado (chip).
+</p>
+<p>
+Características: Significativa redução de tamanho, custo e consumo de energia, aumento da velocidade de processamento e da confiabilidade. Surgimento dos sistemas operacionais.
+</p>
+<p>
+Exemplo: IBM System/360 - uma família de computadores que revolucionou a indústria.</p>
+<center>
+  <img width="95%" src="../../assets/img/other/terceirageracao.jpg" alt="fundamentos da computação">
+</center>
+<h3>4ª Geração (1971-hoje): Microprocessadores</h3>
+<p>
+Componentes: A invenção do microprocessador, um circuito integrado contendo toda a Unidade Central de Processamento (CPU) em um único chip, marcou esta geração.
+</p>
+<p>
+Características: Computadores pessoais (PCs) tornaram-se realidade, grande aumento do poder de processamento, miniaturização, redução de custos e expansão do uso da computação em diversas áreas.
+</p>
+<p>
+Exemplo: Apple II e o IBM PC foram marcos importantes da computação pessoal.
+</p>
+<h3>5ª Geração (em andamento): Inteligência Artificial e Computação Quântica</h3>
+<p>
+Componentes: Foco em inteligência artificial (IA), aprendizado de máquina, processamento paralelo, computação quântica e nanotecnologia.
+</p>
+<p>
+Características: Busca por sistemas que possam aprender, raciocinar, resolver problemas complexos e interagir de forma mais natural com os humanos. A computação quântica promete um poder de processamento exponencialmente maior para certos tipos de problemas.</p>
+<p>
+Exemplos: Sistemas de reconhecimento de voz, carros autônomos, algoritmos de aprendizado profundo e protótipos de computadores quânticos.
+</p>
+
+
+<h3>
+Arquitetura de von Neumann
+</h3>
+<p>
+A maioria dos computadores modernos ainda se baseia na arquitetura de von Neumann, proposta pelo matemático John von Neumann. Este modelo define os componentes básicos de um computador e como eles interagem:
+</p>
+<div class="table">
+<ul>
+<li><p>
+Memória: Armazena tanto os dados a serem processados quanto as instruções (o programa) que o computador deve executar. É como o "depósito" de informações do computador.
+</p>
+</li>
+<li><p>
+Unidade Central de Processamento (CPU): O "cérebro" do computador, responsável por executar as instruções do programa. É composta por duas partes principais:
+</p></li>
+<li><p>
+Unidade de Controle: Busca as instruções na memória, as interpreta e coordena as ações dos outros componentes. É como o "gerente" que diz quem faz o quê.
+</p></li>
+<li><p>
+Unidade Lógica e Aritmética (ULA): Realiza as operações matemáticas (adição, subtração, multiplicação, divisão) e lógicas (comparação, negação, etc.). É onde os cálculos são feitos.
+</p></li>
+<li><p>
+Sistema de Entrada/Saída: Permite que o computador se comunique com o mundo exterior, recebendo dados e comandos do usuário (entrada) e exibindo os resultados do processamento (saída).
+</p></li>
 </ul>
 </div>
 <p>
-Lei nº 12.965/2014 (Marco Civil da Internet): exige que você respeite os termos de uso dos sites e não viole direitos autorais ou de privacidade.
+Com 32 bits, é possível obter 4.294.967.296 combinações diferentes (2^32). Isso equivale a 4 GB de memória, pois cada bit representa uma posição de memória.</p>
+<p>Explicação Detalhada:</p>
+<p>Combinações:</p>
+<p>
+Em sistemas binários, cada bit pode ser 0 ou 1. Com 32 bits, temos 2 possibilidades para cada bit. Portanto, o número total de combinações é 2 elevado a 32 (2^32), que resulta em 4.294.967.296.
+</p>
+<p>Memória:</p>
+<p>
+Em sistemas de computadores, cada combinação de bits (cada endereço de memória) representa uma posição de memória. Se cada posição representa um byte (8 bits), então com 32 bits de endereçamento, podemos acessar 4.294.967.296 bytes.
+</p>
+<p>Conversão para GB:</p>
+<p>1 byte = 8 bits</p>
+<p>1 KB (kilobyte) = 1024 bytes</p>
+<p>1 MB (megabyte) = 1024 KB</p>
+<p>1 GB (gigabyte) = 1024 MB</p>
+<p>Portanto, 4.294.967.296 bytes = 4096 MB = 4 GB.</p>
+<p>
+Em resumo: 32 bits podem representar 4.294.967.296 combinações diferentes, o que equivale a 4 GB de memória.</p>
+<p>
+Unidade 3: Unidades Métricas Computacionais</p>
+<p>
+Em computação, utilizamos unidades de medida específicas para quantificar a capacidade de armazenamento de dados e a velocidade de transferência ou processamento. As unidades de armazenamento são baseadas em potências de 2 (devido à natureza binária dos computadores), embora no uso cotidiano muitas vezes sejam referenciadas de forma aproximada em potências de 10.
+</p>
+<p>Medidas de armazenamento:</p>
+<p>
+Bit (b): A menor unidade de informação. Representa um único dígito binário, que pode ser 0 ou 1. É como um interruptor que pode estar ligado ou desligado.
 </p>
 <p>
-Lei nº 13.709/2018 (LGPD): se você coleta dados pessoais que aparecem nessas notícias, mesmo que públicas, você pode estar em violação se não houver base legal para isso.
+Byte (B): Um conjunto de 8 bits. Um byte é a unidade básica para representar um caractere (letra, número, símbolo) em muitos sistemas (ex: 01000001).
 </p>
 <p>
-Código Penal Militar e Civil: se o conteúdo tiver natureza estratégica, confidencial, ou puder afetar a imagem das Forças Armadas, há risco de enquadramento como infração penal/militar.
+byte, word, dword e qword são unidades de medida de dados que representam quantidades de bits. Um byte é a unidade básica, contendo 8 bits. Uma word é normalmente 16 bits (2 bytes), enquanto um dword (double word) é 32 bits (4 bytes) e um qword (quad word) é 64 bits (8 bytes).</p>
+<p>Detalhes:</p>
+<p>Byte:</p>
+<p>
+A unidade de medida mais básica, geralmente usada para armazenar um único caractere ou número pequeno.</p>
+<p>Word:</p>
+<p>
+Dois bytes, frequentemente usados para armazenar números inteiros menores ou instruções simples de um processador. 
 </p>
+<p>
+Dword:
+</p>
+<p>Quatro bytes, usados para armazenar endereços de memória (endereçamento de 32 bits) ou números inteiros maiores. </p>
+<p>Qword:</p>
+<p>
+Oito bytes, usados para endereçamento de memória (endereçamento de 64 bits) ou números muito grandes.</p>
+<p>Em resumo:</p>
+<p>
+A relação entre eles é que cada um representa um bloco de dados com um tamanho específico, medido em bits (bits são as unidades mais básicas de informação) e bytes (que são blocos de 8 bits). Os maiores (dword e qword) são usados para endereçamento de memória em computadores modernos e para números maiores.
+</p>
+<p><a style="word-break: break-all;" href="https://www.ime.usp.br/~kellyrb/mac2166_2015/tabela_ascii.html">https://www.ime.usp.br/~kellyrb/mac2166_2015/tabela_ascii.html</a></p>
+<p>A partir do byte, as unidades aumentam em múltiplos de 1024</p>
+<p>
+Kilobyte (KB): 1024 bytes.
+Megabyte (MB): 1024 kilobytes (1024 x 1024 bytes).
+</p>
+<p>
+Gigabyte (GB): 1024 megabytes (1024 x 1024 x 1024 bytes).
+</p>
+<p>
+Terabyte (TB): 1024 gigabytes.
+Petabyte (PB): 1024 terabytes.
+Exemplo:
+</p>
+<p>
+Um documento de texto simples pode ter alguns kilobytes (KB).
+</p>
+<p>
+Uma foto de alta resolução pode ocupar alguns megabytes (MB).
+</p>
+<p>
+Um filme em alta definição pode ocupar vários gigabytes (GB) de espaço em disco.
+</p>
+<p>
+Um disco rígido (HD) de um computador moderno geralmente tem capacidade de armazenamento em terabytes (TB).
+</p>
+<p>
+Grandes bancos de dados e arquivos de internet podem atingir petabytes (PB) de tamanho.
+</p>
+<p>
+Medidas de velocidade (taxa de transferência):
+</p>
+<p>
+É importante mencionar algumas unidades comuns:
+</p>
+
+bps (bits per second): Bits por segundo, usado para medir a velocidade de transferência de dados (ex: velocidade da internet).
+Kbps (kilobits per second): Kilobits por segundo (1000 bits por segundo).
+Mbps (megabits per second): Megabits por segundo (1000 kilobits por segundo).
+Gbps (gigabits per second): Gigabits por segundo (1000 megabits por segundo).
+Observação: É importante distinguir entre Bytes (B) e bits (b). A velocidade de internet geralmente é medida em bits por segundo, enquanto o tamanho de arquivos é medido em Bytes.
+
+Exercício:
+
+Quantos megabytes existem em 5 GB?
+Quantos bytes há em 2 MB?
+
+
+Unidade 4: Sistemas de Numeração e Conversão
+
+Os computadores internamente utilizam o sistema binário para representar e processar informações. No entanto, os humanos utilizam o sistema decimal em seu dia a dia. Além desses, outros sistemas como o octal e o hexadecimal são importantes em áreas específicas da computação.
+
+Sistema Binário (Base 2)
+
+O sistema binário utiliza apenas dois dígitos: 0 e 1. Ele é fundamental para a computação, pois os computadores são construídos com circuitos elétricos que possuem dois estados (ligado e desligado). Cada dígito no sistema binário representa uma potência de 2, conforme sua posição. Por exemplo, o número binário 1011 representa:
+
+1 × 2³ + 0 × 2² + 1 × 2¹ + 1 × 2⁰
+8 + 0 + 2 + 1 = 11
+Sistema Decimal (Base 10)
+
+O sistema decimal é o que usamos no dia a dia, utilizando os dígitos de 0 a 9. Cada posição em um número decimal corresponde a uma potência de 10. Por exemplo, o número 345 pode ser decomposto como:
+
+3 × 10² + 4 × 10¹ + 5 × 10⁰
+300 + 40 + 5 = 345
+Sistema Octal (Base 8)
+
+O sistema octal utiliza os dígitos de 0 a 7. Ele foi bastante utilizado em alguns sistemas de computação antigos e ainda aparece em contextos específicos. A vantagem do octal é que cada dígito representa exatamente 3 bits (já que 2³ = 8), o que facilita a conversão direta do binário para o octal.
+
+Sistema Hexadecimal (Base 16)
+
+O sistema hexadecimal utiliza 16 símbolos: os dígitos de 0 a 9 e as letras A a F (para representar os valores 10 a 15). Esse sistema é muito utilizado em computação, especialmente para representar endereços de memória e cores em sistemas gráficos, porque cada dígito hexadecimal corresponde a 4 bits (2⁴ = 16), o que torna a representação dos números binários muito mais compacta.
+
+Conversões entre Sistemas de Numeração
+
+A conversão entre diferentes sistemas é essencial para conectar a forma como os humanos leem números com a forma como os computadores os processam:
+
+De Decimal para Outra Base: Divida o número pelo valor base desejada, anote o resto e repita o procedimento com o quociente até este se tornar zero. A leitura dos restos, de trás para frente, fornece o número na nova base.
+De Binário para Decimal: Multiplique cada bit do número binário por 2 elevado à potência correspondente à sua posição (começando da direita, que representa 2⁰) e some os resultados.
+De Binário para Hexadecimal: Agrupe os dígitos binários em conjuntos de quatro (começando pela direita) e converta cada grupo para o dígito hexadecimal correspondente.
+Exemplo Prático: Convertendo 156 (Decimal) para Binário
+
+Para converter o número decimal 156 para binário, podemos utilizar o método da divisão sucessiva:
+
+Divisão
+
+Quociente
+
+Resto
+
+156 ÷ 2
+
+78
+
+0
+
+78 ÷ 2
+
+39
+
+0
+
+39 ÷ 2
+
+19
+
+1
+
+19 ÷ 2
+
+9
+
+1
+
+9 ÷ 2
+
+4
+
+1
+
+4 ÷ 2
+
+2
+
+0
+
+2 ÷ 2
+
+1
+
+0
+
+1 ÷ 2
+
+0
+
+1
+
+Lendo os restos de baixo para cima, temos: 1 0 0 1 1 1 0 0, ou seja, 10011100 em binário.
+
+Entender os sistemas de numeração e como converter entre eles é vital na computação, pois possibilita a tradução entre a representação interna dos dados (binário) e a forma mais familiar (decimal) aos humanos. Além disso, os sistemas octal e hexadecimal oferecem maneiras mais compactas e práticas de representar números em contextos especializados, como programação de baixo nível e gerenciamento de memória.
+
+Essa compreensão não apenas facilita a resolução de problemas práticos (como depuração e análise de sistemas), mas também aprofunda a apreciação da elegância do processamento de informações nos computadores. Se tiver interesse, podemos explorar exemplos adicionais de conversões ou discutir como esses sistemas se aplicam a outros aspectos da tecnologia digital.
+
+ Aplicabilidade:
+
+Binário: Fundamental para o funcionamento interno dos computadores, representando dados e instruções.
+Octal: Usado em algumas linguagens de programação e em sistemas Unix para permissões de arquivos.
+Hexadecimal: Amplamente utilizado em programação (cores, endereços de memória), representação de dados em baixo nível e em sistemas embarcados.
+Decimal: A base do nosso sistema numérico cotidiano, usado para interação humana com os computadores.
+
+
+Unidade 5: Hardware e Periféricos
+
+O hardware representa todos os componentes físicos de um sistema computacional. Podemos classificá-los em unidades de processamento, memória, armazenamento, comunicação e periféricos. Os periféricos são dispositivos que se conectam ao computador para fornecer entrada de dados, exibir informações de saída ou realizar ambas as funções.
+
+Classificação de Periféricos
+
+Entrada: Permitem que o usuário envie dados e comandos para o computador.
+Mouse: Controla o cursor na tela através do movimento físico.
+Teclado: Permite a digitação de texto e comandos através de teclas.
+Scanner: Converte documentos e imagens físicas em formato digital.
+Webcam: Captura vídeo e imagens para comunicação e gravação.
+Microfone: Converte ondas sonoras em sinais elétricos para gravação e comunicação.
+Touchscreen (Tela Sensível ao Toque): Permite a interação direta com a tela através do toque.
+Saída: Exibem ou produzem informações processadas pelo computador para o usuário.
+Monitor: Exibe informações visuais (texto, imagens, vídeos).
+Impressora: Produz documentos e imagens em papel.
+Caixas de Som (Alto-falantes): Produzem áudio.
+Projetor: Exibe imagens e vídeos em uma superfície maior (tela, parede).
+Fones de Ouvido: Permitem ouvir áudio de forma privada.
+Entrada/Saída: Realizam ambas as funções, permitindo a entrada e a saída de dados.
+Pen Drive (Flash Drive): Dispositivo portátil para armazenar e transferir dados via porta USB.
+HD Externo (Disco Rígido Externo): Dispositivo de armazenamento portátil com maior capacidade que um pen drive.
+Tela Sensível ao Toque (Touchscreen): Já mencionada em entrada, também pode exibir informações.
+Placa de Rede: Permite a comunicação com outras redes (entrada e saída de dados de rede).
+Modem/Roteador: Dispositivos que facilitam a conexão à internet e o tráfego de dados (entrada e saída de dados da internet).
+Os dispositivos necessitam fazer a comunicação com o computador, seja por alguma porta conectada diretamente na placa-mãe (USB, COM, Serial, VGA, HDMI...) ou por alguma placa de comunicação (placa de rede, placa wireless). 
+
+Placas de Comunicação
+
+Permitem que o computador se conecte a redes e outros dispositivos.
+
+Placa de Rede (Ethernet): Permite a conexão a redes locais (LAN) e à internet através de cabos (geralmente RJ45).
+Placa de Vídeo (GPU - Graphics Processing Unit): Processa gráficos e imagens, essencial para jogos, edição de vídeo e outras aplicações visuais intensivas. Pode ser integrada à placa-mãe ou ser uma placa separada.
+Placa Wi-Fi: Permite a conexão sem fio a redes Wi-Fi. Pode ser integrada à placa-mãe ou ser uma placa separada (geralmente um pequeno módulo).
+
+
+Fontes de Energia
+
+Fornecem a energia elétrica necessária para o funcionamento de todos os componentes do computador.
+
+ATX: O padrão mais comum de fontes de alimentação para computadores desktop, convertendo a energia da tomada para as voltagens utilizadas pelos componentes internos.
+Carregadores para Notebooks: Adaptadores de energia externos que convertem a energia da tomada para a voltagem e corrente adequadas para o notebook e também carregam a bateria.
+
+
+Processadores (CPU)
+
+A Unidade Central de Processamento (CPU) é o "cérebro" do computador, responsável por executar as instruções dos programas.
+
+
+
+
+
+
+
+As principais arquiteturas de processadores são x86, x64 e ARM, que se diferenciam principalmente em sua proposta de design, conjunto de instruções e aplicações práticas. Vamos detalhar cada uma:
+
+x86
+
+Histórico e Origem: O termo x86 refere-se a uma família de arquiteturas desenvolvidas pela Intel, originada com o processador 8086 e evoluindo através dos modelos 80286, 80386, entre outros. Historicamente, o x86 se consolidou como a base dos computadores pessoais.
+Características:
+Arquitetura CISC (Complex Instruction Set Computing): Utiliza instruções de tamanho variável, muitas vezes realizando operações complexas em uma única instrução.
+32-bit: Tradicionalmente, quando se fala em x86, geralmente se pensa em processadores de 32 bits, com um espaço de endereçamento limitado a 4 GB de memória.
+Aplicações: Predominante em desktops e servidores (especialmente em sistemas mais antigos ou em contextos onde a arquitetura de 32 bits ainda é utilizada).
+x64 (também conhecido como x86-64 ou AMD64)
+
+Histórico e Evolução: O x64 é uma extensão do x86 que agrega suporte a 64 bits. Criado inicialmente pela AMD sob o nome de AMD64, essa arquitetura foi posteriormente adotada pela Intel (sob o nome Intel 64).
+Características:
+Suporte a 64-bit: Permite um espaço de endereçamento de memória muito maior, eliminando as limitações dos 4 GB do x86.
+Mais Registradores e Melhorias Internas: Inclui um conjunto estendido de registradores, o que melhora a eficiência no processamento e na execução de instruções complexas.
+Compatibilidade: Preserva compatibilidade com instruções de 32 bits, permitindo a execução de software legado sem grandes complicações.
+Aplicações: Atualmente, a grande maioria dos computadores pessoais, laptops e servidores utiliza processadores x64, garantindo melhor desempenho e capacidade de processamento para aplicações modernas.
+ARM
+
+Histórico e Origem: Desenvolvida pela ARM Holdings, a arquitetura ARM é baseada no princípio RISC (Reduced Instruction Set Computing). Ao contrário do x86/x64, que são arquiteturas CISC, o ARM enfatiza simplicidade e eficiência.
+Características:
+RISC (Reduced Instruction Set Computing): Utiliza um conjunto de instruções simplificado e de tamanho fixo, permitindo pipelines mais eficientes e menor consumo de energia.
+Eficiência Energética: Devido à sua simplicidade, a arquitetura ARM consome menos energia, tornando-se ideal para dispositivos móveis e embarcados.
+Versatilidade: Está presente em uma ampla gama de aplicações, desde smartphones e tablets até servidores de alta eficiência energética e sistemas embarcados.
+Aplicações: Encontra forte presença no mercado de dispositivos móveis (como smartphones e tablets), IoT (Internet das Coisas) e, mais recentemente, também tem ganhado espaço em servidores e computadores pessoais com a promessa de oferecer alta performance com baixo consumo de energia.
+Clock ou frequência é um termo utilizado para determinar a velocidade de um processador de um computador em Hertz (Hz). Basicamente, ele define a quantidade de ciclos que o componente consegue realizar a cada segundo. Embora seja um dado técnico importante sobre processadores para PCS de todos os tipos, o clock não é o único referencial de performance que você deve observar na hora de comparar diferentes processadores. Na verdade, outros fatores possuem maior importância para efetuar essa análise.
+
+
+
+
+
+Memórias
+
+A memória é essencial para o funcionamento do computador, armazenando dados e instruções temporariamente ou permanentemente.
+
+RAM (Random Access Memory):  É a memória principal do computador, usada para armazenar os programas e dados que estão sendo utilizados no momento. Quanto mais RAM, mais programas podem rodar simultaneamente e mais rápido o computador pode acessar os dados em uso.
+
+Tipos:
+
+DRAM (Dynamic Random Access Memory): É o tipo de memória mais comum, usada em computadores, laptops e outros dispositivos. A DRAM armazena dados em capacitores, que precisam ser constantemente recarregados para manter os dados. 
+SDRAM (Synchronous Dynamic Random Access Memory): É um tipo de DRAM que sincroniza sua operação com o relógio do sistema, o que permite um acesso mais rápido aos dados. 
+DDR SDRAM (Double Data Rate SDRAM): Uma evolução da SDRAM que permite transferir dados em ambas as bordas do sinal do relógio, dobrando a taxa de transferência de dados. 
+LPDDR (Low Power Dynamic Random Access Memory): Uma versão da DRAM que usa menos energia, projetada para dispositivos móveis e outros aparelhos que precisam economizar energia
+ROM (Read-Only Memory): Memória somente de leitura, não volátil, o que significa que os dados permanecem mesmo quando o computador é desligado. Contém informações essenciais para a inicialização do computador (como o BIOS/UEFI). Normalmente utiliza memória SRAM (Static Random Access Memory): É mais rápida e usa transistores para armazenar dados, não precisando de refresh para manter os dados. É mais cara e mais utilizada em caches de processador e outras aplicações que exigem alta velocidade. 
+Cache: Uma pequena quantidade de memória rápida que armazena cópias dos dados acessados com mais frequência pela CPU. Isso permite que o processador acesse esses dados rapidamente, sem precisar buscar na memória RAM, acelerando o processamento. Existem diferentes níveis de cache (L1, L2, L3), com diferentes velocidades e tamanhos.
+Armazenamento Secundário: Engloba dispositivos como SSDs, discos rígidos e memórias flash, que são não voláteis e utilizados para armazenamento permanente de dados e programas.
+Tamanho: Capacidade de armazenamento da memória (bytes).
+
+Latência: Se refere ao tempo de espera para acessar as memórias.
+
+Frequência: É medida em hertz (Hz) e indica quantas vezes por segundo a memória pode ser acessada e lida ou escrita.
+
+
+
+Memória RAM
+
+A memória RAM (Random Access Memory, ou Memória de Acesso Aleatório) é um dos componentes mais importantes em qualquer sistema computacional, responsável por armazenar temporariamente os dados e instruções que o processador precisa acessar rapidamente enquanto executa programas. Memória de acesso aleatório, volátil. Aleatória porque qualquer local de memória pode ser acessado diretamente, independente da sua localização ou posição anterior. Em outras palavras, você não precisa começar a ler da primeira posição e ir passando por cada uma delas até encontrar a que precisa, como acontecia com antigas formas de armazenamento. Volátil significa que os dados são perdidos quando o computador é desligado. 
+
+Funções principais:
+
+Armazenar instruções e dados temporários de programas em execução.
+Acelerar o desempenho geral do sistema, evitando o acesso constante a memórias mais lentas (HD e SSD).
+Executar múltiplas tarefas (multitarefa), mantendo vários programas abertos simultaneamente.
+Características Técnicas
+
+Capacidade
+
+Medida em gigabytes (GB), indica quanto dado pode ser armazenado temporariamente.
+Sistemas modernos variam entre 4 GB a 64 GB (ou mais).
+Velocidade
+
+Determinada pela frequência (medida em MHz ou MT/s) e pela latência.
+RAM mais rápida significa maior taxa de transferência entre CPU e RAM.
+DDR (Double Data Rate): padrão atual em PCs, com versões como DDR3, DDR4 e DDR5 (mais rápidas e eficientes). DDR transfere dados duas vezes por ciclo de clock, o que a torna mais rápida que as memórias SDR (Single Data Rate). 
+
+RAM x Armazenamento
+
+Característica
+
+Memória RAM
+
+Armazenamento (HD/SSD)
+
+Tipo de memória
+
+Volátil
+
+Não volátil
+
+Velocidade
+
+Muito rápida
+
+Mais lenta
+
+Capacidade
+
+Menor
+
+Maior
+
+Função
+
+Execução de programas
+
+Armazenamento de dados permanentes
+
+ Expansão e Upgrade
+
+Adicionar mais RAM é uma das maneiras mais simples e eficazes de aumentar o desempenho de um computador, desde que:
+
+A placa-mãe suporte a nova capacidade.
+Os módulos sejam compatíveis (tipo, frequência, voltagem).
+
+
+Dispositivos de Armazenamento
+
+Armazenam dados de forma persistente, mesmo quando o computador está desligado.
+
+HD (Hard Disk Drive): Disco rígido, utiliza pratos magnéticos para armazenar dados. Geralmente oferece grande capacidade de armazenamento a um custo menor (ou não!), mas é mais lento e sensível a impactos. HD's possuem discos que giram em alta velocidade, e uma pequena agulha que faz a leitura destes discos. Pequenas vibrações podem danificar estes componentes e corromper os dados.
+SSD (Solid State Drive): Unidade de estado sólido, utiliza memória flash para armazenar dados. É muito mais rápido, mais silencioso, mais resistente a impactos e consome menos energia que um HD, mas geralmente tem um custo por gigabyte maior. A memória flash NAND tem uma capacidade limitada de ciclos de escrita, o que significa que, com o tempo, o SSD pode começar a apresentar falhas devido ao desgaste das células de memória. O TBW é uma métrica importante para entender a durabilidade de um SSD e ajudar a determinar a sua vida útil esperada. 
+Pen Drive (Flash Drive): Já mencionado como periférico de entrada/saída, utiliza memória flash para armazenamento portátil.
+Cartões de Memória (ex.: SD, microSD): Utilizados em câmeras digitais, smartphones e outros dispositivos para armazenamento portátil.
+
+
+O endereçamento em SSD (Solid State Drive) é similar ao de memória RAM, ou seja, é baseado em um sistema de endereço lógico que permite o acesso rápido e aleatório aos dados armazenados em chips de memória flash. Ao contrário dos HDDs (Hard Disk Drives), que utilizam discos magnéticos e um braço mecânico para acessar os dados, os SSDs não têm partes móveis, o que resulta em tempos de acesso e transferência de dados significativamente mais rápidos. 
+
+Como funciona o endereçamento em SSD:
+
+1. Controlador: Um controlador de SSD é responsável por gerenciar o endereçamento e as operações de leitura e gravação de dados na memória flash. Os dados vão sendo gravados nos espaços disponíveis (vazios ou “liberados”).
+
+2. Endereçamento lógico: O controlador utiliza um sistema de endereçamento lógico, que não corresponde diretamente à posição física dos dados na memória flash. 
+
+3. Chips de memória: A memória flash é organizada em chips, e cada chip contém várias células de memória. 
+
+4. Acesso rápido e aleatório: O controlador pode acessar qualquer célula de memória diretamente, sem a necessidade de percorrer mecanicamente a unidade, como acontece nos HDDs. 
+
+Principais diferenças entre SSD e HDD:
+
+SSDs usam memória flash, enquanto HDDs usam discos magnéticos. 
+SSDs são significativamente mais rápidos que os HDDs, pois não têm partes móveis e podem acessar os dados diretamente. 
+SSDs são mais duráveis, pois não têm partes móveis e são menos suscetíveis a danos causados por choques e vibrações. 
+SSDs consomem menos energia que os HDDs, pois não têm partes móveis e exigem menos energia para funcionar. 
+SSDs são silenciosos, enquanto HDDs emitem um ruído característico devido às partes móveis
+Os dispositivos de armazenamentos tem sua velocidade de transferência dada em B/s. A velocidade de HDs (Hard Disk Drives) padrão, como os encontrados em computadores e laptops, ainda é de cerca de 80 a 160 MB/s. A velocidade de transferência de dados de um HD externo pode variar, com alguns modelos oferecendo até 480 MB/seg. No entanto, a velocidade de um SSD (Solid State Drive) é significativamente maior, com os modelos SATA atingindo velocidades de 200 a 550 MB/s e os modelos NVMe de ponta chegando a 7 GB/s.
+
+
+
+Unidade 6: Softwares, Sistemas Operacionais e Ferramentas
+
+O software é a parte não física (lógica) de um sistema computacional, compreendendo os programas, dados e instruções que permitem ao usuário interagir com o hardware e realizar tarefas.
+
+O Software: A Essência Lógica do Computador
+
+O software é a parte não física, a parte lógica de um sistema computacional. Ele é a ponte invisível que conecta o usuário ao hardware, permitindo que as máquinas executem tarefas complexas e úteis. Em sua essência, o software compreende um conjunto de programas, dados e instruções que orquestram o funcionamento do computador, desde o simples clique do mouse até operações complexas de processamento de dados. Sem ele, o hardware seria apenas um aglomerado de componentes eletrônicos inertes.
+
+Categorias de Software
+
+Para entender a vastidão do universo do software, podemos classificá-lo em três categorias principais, cada uma com sua função específica e crucial para o funcionamento do sistema.
+
+Software de Sistema
+
+O software de sistema é o pilar fundamental de qualquer sistema computacional. Sua principal função é controlar e gerenciar o hardware do computador, atuando como um intermediário entre o usuário e a máquina. Ele cria o ambiente necessário para que outros softwares, os aplicativos, possam ser executados de forma eficiente e sem conflitos. O exemplo mais proeminente e indispensável dessa categoria é o Sistema Operacional (SO), que abordaremos em detalhes mais adiante. Além dos SOs, esta categoria inclui também drivers de dispositivo (software que permite ao SO se comunicar com periféricos como impressoras e placas de vídeo) e firmware (software embutido em hardware, como na BIOS de um computador).
+
+Software Aplicativo: Ferramentas para o Usuário
+
+O software aplicativo é projetado com um objetivo claro: realizar tarefas específicas para o usuário. É a categoria mais vasta e diversificada, abrangendo uma infinidade de programas que atendem às mais variadas necessidades. Desde a criação de documentos e planilhas até a edição de fotos e vídeos, passando por jogos e navegadores de internet, os softwares aplicativos são as ferramentas que nos permitem ser produtivos, criativos e entretidos com nossos computadores.
+
+Alguns exemplos notáveis de software aplicativo incluem:
+
+Processadores de texto: Microsoft Word, Google Docs, LibreOffice Writer.
+Planilhas eletrônicas: Microsoft Excel, Google Sheets, LibreOffice Calc.
+Apresentações: Microsoft PowerPoint, Google Slides, LibreOffice Impress.
+Navegadores de internet: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari.
+Editores de imagem e vídeo: Adobe Photoshop, GIMP, DaVinci Resolve.
+Softwares de comunicação: Zoom, Skype, Microsoft Teams.
+Jogos: uma infinidade de títulos para entretenimento.
+Softwares de design gráfico, engenharia, contabilidade, entre outros.
+Software Utilitário: Otimizando e Protegendo o Sistema
+
+O software utilitário atua como um verdadeiro ajudante, auxiliando na manutenção, configuração e otimização do sistema operacional e do hardware. Ele não realiza tarefas diretas do usuário como um aplicativo, mas sim garante que o sistema funcione de forma suave, segura e eficiente. Esses programas são essenciais para manter a "saúde" do computador, prevenindo problemas e melhorando o desempenho.
+
+Exemplos comuns de softwares utilitários incluem:
+
+Antivírus e anti-malware: Protegem o sistema contra ameaças cibernéticas.
+Ferramentas de backup e restauração: Criam cópias de segurança de dados importantes e permitem a recuperação em caso de perda.
+Desfragmentadores de disco: Otimizam o armazenamento de arquivos no disco rígido para melhorar o desempenho.
+Compactadores de arquivos: Reduzem o tamanho de arquivos e pastas para economizar espaço e facilitar o compartilhamento (Ex: WinRAR, 7-Zip).
+Limpadores de disco: Removem arquivos temporários e desnecessários para liberar espaço.
+Gerenciadores de senhas: Armazenam e gerenciam senhas de forma segura.
+
+
+Sistemas Operacionais (SO): A Plataforma Essencial
+
+O Sistema Operacional (SO) é, sem dúvida, o software mais crítico de qualquer computador. Ele é o software fundamental que gerencia todos os recursos de hardware e software de um computador, desde o processador e a memória até os dispositivos de entrada e saída. Além disso, o SO fornece uma interface para o usuário interagir com o sistema (seja gráfica ou por linha de comando) e, crucialmente, cria o ambiente onde os aplicativos podem ser executados. É o maestro que coordena todas as operações, garantindo que tudo funcione em harmonia.
+
+Vamos detalhar os sistemas operacionais mais populares:
+
+Windows: Desenvolvido pela Microsoft, o Windows é o sistema operacional mais utilizado em computadores pessoais no mundo. Sua vasta popularidade se deve, em grande parte, à sua interface gráfica amigável e intuitiva, que o tornou acessível a milhões de usuários. Além disso, possui uma vasta compatibilidade com hardware e software, o que significa que a maioria dos programas e dispositivos são desenvolvidos para funcionar perfeitamente no Windows. Suas diferentes versões (Windows 10, Windows 11) continuam a evoluir, incorporando novas funcionalidades e melhorias de segurança.
+Linux: O Linux é uma família de sistemas operacionais de código aberto, construído sobre o kernel Linux. É conhecido por sua flexibilidade, segurança e alto grau de personalização. Por ser de código aberto, permite que desenvolvedores e usuários modifiquem e distribuam o sistema livremente, o que resultou em uma infinidade de distribuições (distros), cada uma com suas características e focos específicos. Exemplos populares incluem Ubuntu (conhecido por sua facilidade de uso), Fedora (com foco em tecnologias de ponta) e Debian (valorizado por sua estabilidade). O Linux é amplamente utilizado em servidores, sistemas embarcados e, cada vez mais, em desktops para usuários que buscam controle e liberdade.
+macOS: Desenvolvido pela Apple, o macOS é o sistema operacional exclusivo dos computadores Macintosh. É amplamente elogiado por sua interface elegante, design sofisticado e integração perfeita com o hardware Apple. O macOS se destaca por seu foco em design e usabilidade, oferecendo uma experiência de usuário fluida e intuitiva. É popular entre profissionais criativos e usuários que valorizam a estética e a eficiência do ecossistema Apple.
+Android: O Android é um sistema operacional baseado no kernel Linux, desenvolvido pelo Google. Ele revolucionou o mercado de dispositivos móveis, sendo o sistema operacional móvel mais utilizado no mundo em smartphones, tablets e uma gama crescente de outros dispositivos (como smart TVs e smartwatches). Sua arquitetura aberta e flexível permitiu que uma vasta comunidade de desenvolvedores criasse milhões de aplicativos disponíveis na Google Play Store, tornando-o extremamente versátil e adaptável a diferentes fabricantes e necessidades dos usuários.
+Ferramentas Essenciais dos Sistemas Operacionais
+
+Os sistemas operacionais não são apenas a base; eles também vêm equipados com uma série de ferramentas integradas que são cruciais para gerenciar o sistema e interagir com ele de forma eficaz.
+
+Gerenciador de Arquivos: Esta é uma das ferramentas mais utilizadas em qualquer SO. O gerenciador de arquivos permite que os usuários naveguem, organizem, copiem, movam, excluam e renomeiem arquivos e pastas em seu disco rígido e em outros dispositivos de armazenamento. É a interface visual para o sistema de arquivos do computador, tornando a organização de dados uma tarefa simples.
+Exemplos: Explorador de Arquivos no Windows, Finder no macOS, Nautilus (ou Files) e Dolphin no Linux.
+Painel de Controle/Configurações: Esta interface gráfica é o centro de comando para configurar diversas opções do sistema. Aqui, os usuários podem personalizar desde configurações de hardware (como impressoras e dispositivos de áudio) e software, até redes, contas de usuário, opções de energia, segurança e privacidade. É o local para ajustar o sistema às preferências individuais e realizar a manutenção básica.
+Exemplos: Painel de Controle e aplicativo Configurações no Windows, Preferências do Sistema no macOS, Configurações (ou Settings) em diversas distribuições Linux.
+Terminal/Prompt de Comando: Embora possa parecer intimidador para iniciantes, o terminal ou prompt de comando é uma interface de linha de comando (CLI) que permite interagir com o sistema através de comandos de texto. É uma ferramenta extremamente poderosa para usuários avançados, desenvolvedores e administradores de sistema, permitindo a automação de tarefas, diagnóstico de problemas e acesso a funcionalidades que não estão disponíveis na interface gráfica. A proficiência no uso do terminal é um diferencial em muitas áreas da computação.
+Exemplos: Prompt de Comando e PowerShell no Windows, Terminal no macOS e Linux.
+
+
+VÍRUS E ANTIVÍRUS
+
+
+
+Malwares: Entendendo as Ameaças Digitais
+
+Malware, uma junção das palavras em inglês "malicious software" (software malicioso), é um termo abrangente que descreve qualquer programa de software projetado para causar danos, roubar informações ou assumir o controle de um sistema de computador sem o consentimento do usuário. Em essência, é um software criado com intenções maliciosas.
+
+VÍRUS são softwares maliciosos que se acoplam a programas legítimos e se replicam, espalhando-se para outros computadores sem o consentimento do usuário. Eles podem causar uma variedade de problemas, desde a exibição de pop-ups irritantes até a corrupção de dados e o roubo de informações pessoais.
+
+Como os vírus funcionam?
+
+Geralmente, um vírus entra em um computador quando o usuário executa um programa infectado, abre um anexo de e-mail malicioso ou clica em um link comprometido. Uma vez ativo, ele pode:
+
+Se replicar: Criando cópias de si mesmo e anexando-as a outros programas, documentos ou unidades de armazenamento.
+Se espalhar: Através de redes, e-mails, pendrives e downloads.
+Executar sua carga maliciosa (payload):Que pode incluir ações como:
+Excluir ou corromper arquivos.
+Exibir mensagens indesejadas.
+Redirecionar o navegador para sites maliciosos.
+Coletar informações pessoais (senhas, dados bancários).
+Transformar o computador em um "bot" para ataques distribuídos de negação de serviço (DDoS).
+
+
+Vírus: Programas maliciosos que se anexam a outros programas (os "hospedeiros") e se replicam quando esses programas são executados, causando danos ao sistema (corrupção de arquivos, lentidão, etc.).
+Vírus de Arquivo: São os mais comuns. Eles se anexam a arquivos executáveis (programas, jogos) e se ativam quando esses arquivos são abertos.
+Vírus de Boot: Infectam o setor de inicialização de um disco rígido ou pendrive. Eles são carregados na memória do computador antes mesmo do sistema operacional, tornando-os difíceis de remover.
+Vírus de Macro: Escritos em linguagens de macro (como as usadas em Microsoft Word e Excel), eles infectam documentos e planilhas. São ativados quando o documento é aberto e as macros são habilitadas.
+Vírus Polimórficos: São projetados para mudar seu código a cada infecção, o que os torna difíceis de serem detectados por softwares antivírus tradicionais que dependem de assinaturas.
+Vírus Stealth: Tentam esconder sua presença no sistema, interceptando chamadas do sistema operacional e retornando informações falsas para enganar programas antivírus.
+Spyware: é um tipo de software malicioso (malware) que se instala secretamente em um dispositivo (computador, smartphone, tablet) sem o conhecimento ou consentimento do usuário. Uma vez instalado, ele opera em segundo plano para monitorar e coletar informações sobre as atividades do usuário, enviando esses dados para um terceiro (o atacante) sem que a vítima perceba.
+Worms: Programas maliciosos autônomos que se replicam e se espalham por redes de computadores sem precisar se anexar a outros arquivos. Podem consumir recursos do sistema e causar interrupções na rede.
+Trojans (Cavalos de Troia): Programas maliciosos que se disfarçam de softwares legítimos para enganar o usuário e serem instalados. Uma vez instalados, podem realizar diversas atividades maliciosas (roubo de dados, acesso remoto, etc.).
+Ransomware: Um tipo de malware que criptografa os arquivos do usuário e exige um resgate (geralmente em criptomoeda) para descriptografá-los. Se o pagamento não for feito, os arquivos podem ser perdidos permanentemente.
+Adware: Exibe anúncios indesejados e pop-ups no navegador do usuário, muitas vezes sem permissão.
+É importante notar que, embora o termo "vírus" seja frequentemente usado de forma genérica para se referir a qualquer malware, existem diferentes categorias de ameaças cibernéticas com comportamentos distintos.
+
+Como se proteger?
+
+Antivírus: Softwares utilitários projetados para detectar, prevenir e remover softwares maliciosos (vírus, worms, trojans, spyware, etc.). Eles geralmente utilizam bancos de dados de assinaturas de vírus e análise comportamental para identificar ameaça
+
+
+Antivírus Pagos (Melhores Opções para Proteção Abrangente)
+
+Os antivírus pagos geralmente oferecem camadas de proteção mais robustas, recursos adicionais como VPN, gerenciadores de senhas, firewall avançado, proteção contra roubo de identidade e suporte técnico dedicado.
+
+Norton (especialmente Norton 360): Frequentemente classificado como um dos melhores. Oferece proteção completa contra malware, firewall, VPN, gerenciador de senhas e proteção de identidade. É uma solução abrangente para múltiplos dispositivos.
+Bitdefender: Conhecido por sua excelente taxa de detecção de ameaças e baixo impacto no desempenho do sistema. O Bitdefender Antivirus Plus e o Internet Security são opções populares, com recursos como VPN limitada, proteção antiphishing e controle parental.
+McAfee Total Protection: Uma opção tradicional e confiável, oferecendo proteção abrangente para múltiplos dispositivos, com foco em segurança versátil e recursos como monitoramento de identidade e VPN.
+Kaspersky: Apesar de algumas discussões sobre sua origem russa (especialmente para uso governamental), a Kaspersky é consistentemente elogiada por sua alta taxa de detecção de malware e recursos avançados de segurança. Suas soluções oferecem proteção contra ransomware, phishing e monitoramento de rede.
+ESET Internet Security: Reconhecido por ser leve e eficaz, ideal para quem não quer que o antivírus afete o desempenho do computador. Oferece proteção proativa contra diversas ameaças.
+TotalAV: Um antivírus que tem ganhado destaque, oferecendo boa proteção e recursos adicionais como ferramentas de otimização do sistema e VPN.
+Avira Prime / Internet Security: Oferece uma suíte completa de segurança com antivírus, VPN, gerenciador de senhas e outras ferramentas premium.
+Antivírus Gratuitos (Boas Opções para Proteção Básica)
+
+Embora as versões gratuitas não ofereçam o mesmo nível de proteção e os recursos das pagas, elas são uma melhoria significativa em relação a não ter nenhuma proteção.
+
+Windows Defender (Microsoft Defender Antivirus): Integrado ao Windows, é uma opção prática e eficaz para proteção básica. Melhorou muito nos últimos anos e oferece proteção em tempo real contra vírus, spyware e outras ameaças. Para a maioria dos usuários domésticos com Windows 10 ou 11, é uma boa base. Pode ser complementado com uma ferramenta de varredura sob demanda, como o Malwarebytes Free.
+Avast Free Antivirus: Uma das opções gratuitas mais populares, oferece proteção contra vírus, malware, spyware e phishing. Possui uma interface amigável e alguns recursos adicionais.
+AVG AntiVirus Free: Pertence à mesma empresa do Avast e oferece proteção similar, com foco em detecção de ransomware e proteção em tempo real.
+Bitdefender Antivirus Free Edition: Destaca-se pela simplicidade e eficácia, com excelente taxa de detecção de ameaças e baixo impacto no desempenho do sistema. É uma boa escolha para quem busca uma solução "configure e esqueça".
+Avira Free Security: Oferece proteção antivírus gratuita com ferramentas adicionais como uma extensão de segurança de navegador e um atualizador de software.
+Panda Free Antivirus: Conhecido por sua proteção baseada em nuvem e leveza. Oferece proteção contra malware, ransomware e uma VPN gratuita limitada.
+Fatores a Considerar ao Escolher:
+
+Taxa de Detecção: Quão bem o antivírus identifica e bloqueia ameaças. Verifique relatórios de laboratórios independentes como AV-Test e AV-Comparatives.
+Impacto no Desempenho: Se o antivírus torna seu computador lento.
+Recursos Adicionais: VPN, gerenciador de senhas, controle parental, proteção de webcam, firewall, etc.
+Facilidade de Uso: A interface é intuitiva e fácil de navegar?
+Suporte ao Cliente: Em caso de problemas, o suporte é acessível e eficiente?
+Custo-benefício: Para as opções pagas, se o preço justifica os recursos oferecidos.
+
+
+A melhor defesa contra vírus e outros malwares é a prevenção:
+
+Mantenha seu software atualizado: Isso inclui o sistema operacional, navegadores e todos os programas instalados. As atualizações geralmente corrigem vulnerabilidades de segurança.
+Use um bom software antivírus/antimalware: Mantenha-o sempre atualizado e execute verificações regulares.
+Tenha cuidado com e-mails e anexos: Não abra e-mails de remetentes desconhecidos ou clique em links suspeitos.
+Baixe programas apenas de fontes confiáveis: Evite sites de download não oficiais ou redes de compartilhamento de arquivos piratas.
+Faça backups regulares: Mantenha cópias de seus arquivos importantes em um local separado, como um disco rígido externo ou um serviço de armazenamento em nuvem.
+Use senhas fortes e únicas: Para todas as suas contas online.
+Habilite a autenticação de dois fatores (2FA): Sempre que possível.
+O MELHOR ANTIVÍRUS É O USUÁRIO!!!
+
+
+
+
+
+Unidade 7: Evolução das linguagens de programação
+
+A evolução das linguagens de programação é marcada por avanços que buscam facilitar a interação entre humanos e máquinas. No início, os programadores utilizavam linguagens extremamente próximas do hardware, conhecidas como linguagens de baixo nível. Com o tempo, surgiram linguagens de alto nível, que são mais amigáveis e próximas da linguagem humana. Este progresso trouxe ganhos de produtividade e acessibilidade ao desenvolvimento de software.
+
+LINGUAGENS DE BAIXO NÍVEL
+
+As linguagens de baixo nível são as que estão mais próximas da linguagem que o computador entende diretamente (código de máquina). Elas oferecem um controle muito granular sobre o hardware, mas são mais complexas de se trabalhar.
+
+Características:
+
+Proximidade com o Hardware: São escritas em uma sintaxe muito parecida com as instruções que o processador entende.
+Pouca Abstração: Não escondem os detalhes complexos do hardware. O programador precisa lidar diretamente com registradores, endereços de memória e ciclos de CPU.
+Dificuldade de Leitura e Escrita: A sintaxe é menos intuitiva e mais detalhada, tornando a programação mais demorada e propensa a erros.
+Menor Portabilidade: O código escrito em uma linguagem de baixo nível é frequentemente específico para uma arquitetura de hardware particular. Um programa escrito para um tipo de processador pode não funcionar em outro sem modificações significativas.
+Exigem Montador: Para serem executadas, precisam ser traduzidas para linguagem de máquina por um programa chamado "montador" (assembler).
+Vantagens:
+
+Maior Controle e Desempenho: Permitem otimizações de performance e controle preciso sobre os recursos do sistema, sendo ideais para tarefas que exigem alta eficiência (como sistemas operacionais, drivers de dispositivos, firmware).
+Uso Eficiente de Recursos: Por estarem tão próximas do hardware, podem utilizar a memória e o processador de forma mais eficiente.
+Desvantagens:
+
+Complexidade Elevada: São muito difíceis de aprender e de escrever código.
+Maior Tempo de Desenvolvimento: O desenvolvimento de programas é mais lento devido à complexidade e ao detalhe exigidos.
+Menor Produtividade: Exigem muitas linhas de código para realizar tarefas relativamente simples.
+Exemplos:
+Linguagem de Máquina: É o nível mais baixo, consistindo em sequências de bits (0s e 1s) que o processador executa diretamente.
+Assembly (ou Linguagem Assembly): Utiliza mnemônicos (códigos simbólicos) para representar as instruções de máquina, tornando-a um pouco mais legível que a linguagem de máquina pura, mas ainda assim muito detalhada.
+LINGUAGENS DE ALTO NÍVEL
+
+As linguagens de alto nível são projetadas para serem mais próximas da linguagem humana, facilitando a escrita, leitura e manutenção do código. Elas abstraem muitos dos detalhes do hardware, permitindo que o programador se concentre na lógica do problema.
+
+Características:
+
+Maior Abstração: Escondem os detalhes complexos do hardware, permitindo que o programador use conceitos mais próximos do raciocínio humano, como variáveis, funções e estruturas de controle.
+Sintaxe Intuitiva: Usam palavras-chave e estruturas que se assemelham à linguagem natural (geralmente inglês), tornando-as mais fáceis de aprender e usar.
+Maior Portabilidade: Geralmente, um programa escrito em uma linguagem de alto nível pode ser executado em diferentes plataformas e sistemas operacionais, desde que haja um compilador ou interpretador adequado.
+Exigem Compilador ou Interpretador: Para serem executadas, o código precisa ser traduzido para linguagem de máquina por um compilador (que traduz todo o código de uma vez) ou por um interpretador (que traduz e executa linha por linha).
+Vantagens:
+
+Facilidade de Uso e Aprendizado: A curva de aprendizado é mais suave, tornando-as ideais para iniciantes.
+Alta Produtividade: Permitem escrever código de forma mais rápida e eficiente, com menos linhas de código para realizar tarefas complexas.
+Manutenção Simplificada: O código é mais legível e organizado, facilitando a depuração e a manutenção.
+Grande Comunidade e Bibliotecas: A maioria das linguagens de alto nível possui vastas comunidades de desenvolvedores e uma riqueza de bibliotecas e frameworks que aceleram o desenvolvimento.
+Desvantagens:
+
+Menor Controle sobre o Hardware: A abstração, embora seja uma vantagem para a produtividade, significa menos controle direto sobre os recursos de baixo nível do sistema.
+Potencialmente Menor Desempenho: O processo de compilação ou interpretação e as abstrações adicionais podem levar a um desempenho ligeiramente inferior em comparação com linguagens de baixo nível para certas tarefas críticas.
+Exemplos:
+
+Python: Conhecida por sua sintaxe clara e legibilidade, muito usada em desenvolvimento web, ciência de dados, inteligência artificial.
+Java: Uma linguagem robusta e orientada a objetos, amplamente utilizada em aplicações empresariais, desenvolvimento mobile (Android) e sistemas distribuídos.
+JavaScript: Essencial para o desenvolvimento web front-end e, com Node.js, também para back-end.
+C#: Desenvolvida pela Microsoft, usada para aplicações Windows, desenvolvimento de jogos (Unity) e web (ASP.NET).
+PHP: Muito utilizada para desenvolvimento web do lado do servidor.
+Ruby: Conhecida por sua elegância e produtividade, popular para desenvolvimento web (Ruby on Rails).
+Conclusão
+
+A escolha entre uma linguagem de alto ou baixo nível depende dos objetivos do projeto.
+
+Linguagens de baixo nível são escolhidas quando o desempenho máximo, o controle preciso do hardware e a eficiência de recursos são cruciais, mesmo que isso signifique maior complexidade e tempo de desenvolvimento.
+Linguagens de alto nível são preferidas para a maioria das aplicações modernas, onde a produtividade, a facilidade de desenvolvimento e a portabilidade são mais importantes, sacrificando um pouco do controle direto e do desempenho bruto.
+É importante notar que a distinção entre "alto" e "baixo" nível é relativa e pode haver linguagens que se situam em um "nível médio", como C e C++, que oferecem um bom equilíbrio entre controle de hardware e abstração. Elas permitem manipulação de memória de baixo nível (como em C) enquanto ainda fornecem estruturas de programação mais complexas e orientadas a objetos (como em C++), sendo muito usadas para desenvolvimento de sistemas, jogos e aplicações que exigem alta performance.
+
+
+
+Comparação entre linguagens de alto e baixo nível
+
+Aspecto
+
+Linguagem de máquina
+
+JavaScript
+
+Abstração
+
+Nenhuma
+
+Alta
+
+Portabilidade
+
+Específica ao hardware
+
+Multiplataforma
+
+Facilidade de uso
+
+Muito difícil
+
+Simples e intuitivo
+
+Uso principal
+
+Controle direto do hardware
+
+Desenvolvimento web
+
+A evolução das linguagens de programação reflete o esforço para tornar a tecnologia mais acessível. As linguagens de alto nível, como JavaScript, representam um passo importante nesse processo, permitindo que desenvolvedores foquem na lógica e na criatividade, enquanto linguagens de baixo nível, como a de máquina, ainda têm sua importância em situações onde o controle absoluto do hardware é necessário.
+
+
+
+Unidade 8: Rede de computadores
+
+Uma rede de computadores é um conjunto de dispositivos interconectados que compartilham recursos e informações entre si. Esses dispositivos podem ser computadores, servidores, impressoras, smartphones ou quaisquer outros dispositivos conectados.
+
+Componentes das Redes de Computadores
+
+Dispositivos de Rede:
+Switch: Um dispositivo usado em redes locais que conecta vários dispositivos dentro da mesma rede e gerencia o tráfego de dados, garantindo que ele chegue ao destinatário correto.
+Roteador: Responsável por conectar diferentes redes, como a rede local à internet. Ele encaminha os dados entre essas redes e também pode fornecer segurança por meio de firewalls integrados.
+Servidores: Computadores com recursos avançados destinados ao armazenamento, processamento e gerenciamento centralizado de dados e aplicações.
+Meios de Transmissão:
+Cabos de Cobre - Par trançado (Ethernet): Usados na maioria das redes locais. São confiáveis, mas têm limitações de distância e velocidade.
+Rede analógica e digital
+Fibra Óptica: Utiliza pulsos de luz para transmitir dados. É muito rápida, ideal para redes de longa distância, mas mais cara.
+Wireless (Wi-Fi): Usa ondas de rádio para a transmissão de dados, proporcionando mobilidade aos usuários, embora seja mais suscetível a interferências.
+Protocolos:
+TCP (Transmission Control Protocol): Garante que os dados sejam entregues de forma ordenada e sem perdas.
+IP (Internet Protocol): Gerencia os endereços únicos de cada dispositivo na rede, permitindo que os dados sejam encaminhados corretamente.
+IPv4 e IPv6
+DHCP, IP dinâmico e IP fixo
+NAT (Network Address Translation) - IP interno e IP externo
+HTTP/HTTPS: Protocolos usados para acessar páginas da web, onde HTTPS é a versão segura que usa criptografia.
+Tipos de Transmissão:
+SIMPLEX
+HALF-DUPLEX
+FULL-DUPLEX
+ENDEREÇO MAC: Endereço Físico do dispositivo (identificação).
+ETHERNET: Padrão de tecnologia para interconexão de redes locais, baseada no envio de pacotes.
+IEEE 802.3 (Instituto de Engenheiros Elétricos e Eletrônicos)
+Ethernet, Fast-Ethernet, Gigabit-Ethernet, 10 Gigabit-Ethernet
+
+
+Topologias de Rede
+
+A forma como os dispositivos são organizados impacta a eficiência e a confiabilidade da rede:
+
+Estrela: Os dispositivos são conectados a um switch ou roteador central. É fácil de gerenciar, mas depende da central para funcionar.
+Barramento: Todos os dispositivos compartilham um único meio de transmissão. É mais econômico, mas tem limitações de desempenho.
+Malha: Cada dispositivo está conectado diretamente a vários outros. É altamente confiável, mas complexa e cara.
+Anel: Os dispositivos são conectados em forma de círculo, onde os dados circulam em uma direção. É eficiente, mas se houver uma falha em um ponto, toda a rede pode ser afetada.
+Tipos de Redes
+
+LAN (Local Area Network): Ideal para residências e escritórios, geralmente cobre pequenas áreas. Exemplos incluem redes Wi-Fi domésticas. 
+VLAN
+WAN (Wide Area Network): Conecta redes locais em grandes distâncias, como entre cidades ou países. A internet é a maior WAN existente.
+MAN (Metropolitan Area Network): Cobre áreas maiores que LAN, mas menores que WAN, como campi universitários ou cidades.
+PAN (Personal Area Network): Utilizada para dispositivos pessoais, como conexão via Bluetooth entre um celular e um fone de ouvido.
+Segurança em Redes
+
+Com o crescimento das redes, surge também a necessidade de proteção:
+
+Firewalls: Monitoram e bloqueiam acessos não autorizados.
+Criptografia: Codifica os dados para evitar que sejam acessados por terceiros.
+VPNs (Redes Virtuais Privadas): Criam conexões seguras através de redes públicas (tunelamento).
+
+
+
+
+Internet
+
+A internet é uma rede global de computadores interconectados, que permite a troca de informações e acesso a diversos serviços como sites, e-mails, redes sociais e muito mais. Ela funciona com base em protocolos de comunicação, sendo o principal o TCP/IP (Transmission Control Protocol/Internet Protocol). Aqui estão alguns aspectos fundamentais:
+
+Como funciona:
+Os dados são transmitidos em pequenos pacotes por redes interconectadas até chegarem ao destino.
+Cada dispositivo conectado possui um endereço IP, que funciona como um identificador único.
+Serviços da internet:
+World Wide Web (WWW): Conjunto de páginas web interligadas que podem ser acessadas via navegadores.
+E-mail: Serviço para envio e recebimento de mensagens.
+VoIP (Voice over IP): Chamadas de voz ou vídeo pela internet, como o Skype.
+Redes Sociais e Streaming: Plataformas para interação social e consumo de mídia.
+Infraestrutura:
+A internet depende de roteadores, switches, servidores, cabos submarinos e satélites. É uma colaboração entre milhões de redes privadas, públicas e governamentais.
+DNS:
+
+O DNS, ou Sistema de Nomes de Domínio, é como a lista telefônica da internet. Ele traduz nomes de domínio legíveis por humanos (como www.exemplo.com) em endereços IP numéricos que os computadores usam para se comunicarem. Basicamente, quando você digita um endereço de site no navegador, o DNS é responsável por encontrar o endereço IP correspondente para que seu navegador possa acessar o site desejado.
+
+Como funciona o DNS?
+
+Requisição: Você digita um nome de domínio no seu navegador  - URL (por exemplo, "www.exemplo.com").
+
+Resolução: O navegador envia essa solicitação para um servidor DNS.
+Consulta: O servidor DNS busca o endereço IP correspondente ao nome de domínio nos seus registros.
+Resposta: O servidor DNS retorna o endereço IP para o seu navegador.
+Conexão: O navegador usa o endereço IP para se conectar ao servidor do site e carregar a página.
+Em resumo: O DNS facilita a navegação na internet, permitindo que você use nomes de domínio fáceis de lembrar em vez de endereços IP numéricos complexos.
+
+
+
+Navegadores
+
+Navegadores são softwares usados para acessar e visualizar páginas da web na internet. Eles interpretam os códigos (HTML, CSS, JavaScript) que formam os sites e os exibem de forma compreensível para o usuário. Exemplos populares incluem Google Chrome, Mozilla Firefox, Microsoft Edge, Safari e outros.
+
+Como funcionam:
+Você insere uma URL (endereço do site) ou termo de pesquisa no navegador.
+O navegador faz uma solicitação a um servidor (chamada de requisição HTTP ou HTTPS).
+O servidor responde com os dados do site, que o navegador interpreta e exibe.
+Principais recursos dos navegadores:
+Aba de navegação: Permite abrir várias páginas ao mesmo tempo.
+Histórico: Lista os sites visitados.
+Favoritos: Para salvar sites para acessos futuros.
+Extensões/Plugins: Adicionam funcionalidades extras, como bloqueadores de anúncios.
+Modo de navegação anônima: Evita que o histórico e cookies sejam armazenados.
+Importância de HTTPS:
+Navegadores modernos priorizam a segurança dos dados. O HTTPS (Hypertext Transfer Protocol Secure) criptografa as informações trocadas entre o navegador e o site, protegendo contra interceptações.
+Velocidade e desempenho:
+Cada navegador possui seu próprio mecanismo de renderização e desempenho. Por exemplo, o Google Chrome utiliza o motor Blink, enquanto o Firefox utiliza o Gecko.
+
+
+
 
 </div>
 </section>
